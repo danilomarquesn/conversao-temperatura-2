@@ -173,3 +173,49 @@ postgres                           latest    5b21e2e86aab   9 days ago       376
 └──> $ docker container run -d -p 8080:8080 orbite82/conversao-temperatura-2:v2
 a44744f98ef30ccd72911a615db92234c07a35045cb3d08abe44bf6200a7207c
 ```
+
+* Docker push V1 e V2
+
+```
+┌─[orbite]@[orbite-desktop]:~/Iniciativa-Devops/conversao-temperatura-2/src
+└──> $ docker push orbite82/conversao-temperatura-2:v1
+The push refers to repository [docker.io/orbite82/conversao-temperatura-2]
+8aa3297902eb: Pushed 
+b2611ae55332: Pushed 
+8d06b4cfacb9: Pushed 
+676491776d22: Pushed 
+8f2b79d5328d: Mounted from library/node 
+693214157724: Mounted from library/node 
+f2f715b72340: Mounted from library/node 
+9e8a8e4e0b92: Mounted from library/node 
+2fbabeba902e: Mounted from library/node 
+ee509ed6e976: Mounted from library/node 
+9177197c67d0: Mounted from library/node 
+7dbadf2b9bd8: Mounted from library/node 
+e7597c345c2e: Mounted from library/node 
+v1: digest: sha256:28c8e4e7faf95e2d2a12040bd143fdead5f4464499d10c919c0455c9ca3ec48a size: 3054
+```
+
+```
+┌─[orbite]@[orbite-desktop]:~/Iniciativa-Devops/conversao-temperatura-2/src
+└──> $ docker push orbite82/conversao-temperatura-2:v2
+The push refers to repository [docker.io/orbite82/conversao-temperatura-2]
+5042a691a071: Pushed 
+1d1568dd87f3: Pushed 
+3d8a6c44f4c4: Pushed 
+7afb0e318720: Pushed 
+0830919801f6: Mounted from library/node 
+802846f6da73: Mounted from library/node 
+1a626c9c8e68: Mounted from library/node 
+216157dba6a2: Mounted from library/node 
+5d1a42aa54a1: Mounted from library/node 
+80d46995af06: Mounted from library/node 
+597ea5af36e6: Mounted from library/node 
+8f534d0617ce: Mounted from library/node 
+f14da82c36e2: Mounted from library/node 
+v2: digest: sha256:fb0d520aaab79d4d1c5f602075581419ea0776f0e79849ada1f8d120a359423f size: 3053
+```
+
+* Docker Hub
+
+[docker hub](https://hub.docker.com/repository/docker/orbite82/conversao-temperatura-2)
