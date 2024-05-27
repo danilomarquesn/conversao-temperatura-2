@@ -39,3 +39,16 @@ jobs:
         # run: |
           # echo add another actions to build,
           # echo test, and deploy your project.
+
+      # Build docker image
+      - name: Build and push Docker images
+        uses: docker/build-push-action@v5.3.0
+        with:
+          context: src
+          # Path to the Dockerfile
+          file: src/Dockefile
+          push: true
+          tags: |
+            danilomarques/aula-github-action-conv-temp:v1
+            danilomarqeus/aula-github-action-conv-temp:latest
+                
