@@ -58,5 +58,5 @@ jobs:
           push: true
           tags: |
             danilomarques/aula-github-action-conv-temp:${{github.run_number}}
-            danilomarqeus/aula-github-action-conv-temp:latest
+            danilomarques/aula-github-action-conv-temp:latest
                 
