@@ -40,13 +40,21 @@ jobs:
           # echo add another actions to build,
           # echo test, and deploy your project.
 
+      - name: Docker Login
+        uses: docker/login-action@v3.1.0
+        with:
+          # Username used to log against the Docker registry
+          username: ${{secrets.DOCKERHUB_USERNAME}}
+          # Password or personal access token used to log against the Docker registry
+          password: ${{secrets.DOCKERHUB_PASSWORD}}
+          
       # Build docker image
       - name: Build and push Docker images
         uses: docker/build-push-action@v5.3.0
         with:
-          context: src
+          context: ./src
           # Path to the Dockerfile
-          file: src/Dockefile
+          file: ./src/Dockefile
           push: true
           tags: |
             danilomarques/aula-github-action-conv-temp:v1
