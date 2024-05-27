@@ -20,6 +20,12 @@ jobs:
         with:
           # Version Spec of the version to use. Examples: 12.x, 10.15.1, >=10.15.0.
           node-version: 16.15.1
+
+      - name: Installation of Mocha for tests
+        run: |
+          cd src;
+          npm install -g mocha;
+          npm install
           
       # - name: Ru a one-line script
         # run: echo Hello, world!
