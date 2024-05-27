@@ -54,9 +54,9 @@ jobs:
         with:
           context: ./src
           # Path to the Dockerfile
-          file: ./src/Dockefile
+          file: ./src/Dockerfile
           push: true
           tags: |
-            danilomarques/aula-github-action-conv-temp:v1
+            danilomarques/aula-github-action-conv-temp:${{github.run_number}}
             danilomarqeus/aula-github-action-conv-temp:latest
                 
